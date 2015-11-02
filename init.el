@@ -28,7 +28,7 @@
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-preload-local.el"
 ;;----------------------------------------------------------------------------
-(require 'init-preload-local nil t)
+;; (require 'init-preload-local nil t)
 
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
@@ -41,8 +41,8 @@
 (require-package 'mwe-log-commands)
 
 (require 'init-frame-hooks)
-(require 'init-xterm)
-(require 'init-themes)
+;; (require 'init-xterm)
+;; (require 'init-themes)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-proxies)
@@ -53,21 +53,21 @@
 (require 'init-ibuffer)
 (require 'init-flycheck)
 
-(require 'init-recentf)
+;; (require 'init-recentf)
 (require 'init-ido)
 (require 'init-hippie-expand)
 (require 'init-auto-complete)
-(require 'init-windows)
-(require 'init-sessions)
+;; (require 'init-windows)
+;; (require 'init-sessions)
 (require 'init-fonts)
 (require 'init-mmm)
 
 (require 'init-editing-utils)
 
-(require 'init-vc)
-(require 'init-darcs)
-(require 'init-git)
-(require 'init-github)
+;; (require 'init-vc)
+;; (require 'init-darcs)
+;; (require 'init-git)
+;; (require 'init-github)
 
 (require 'init-compile)
 (require 'init-crontab)
@@ -105,13 +105,13 @@
 (require 'init-ledger)
 ;; Extra packages which don't require any configuration
 
-(require-package 'gnuplot)
-(require-package 'lua-mode)
-(require-package 'htmlize)
-(require-package 'dsvn)
-(when *is-a-mac*
-  (require-package 'osx-location))
-(require-package 'regex-tool)
+;; (require-package 'gnuplot)
+;; (require-package 'lua-mode)
+;; (require-package 'htmlize)
+;; (require-package 'dsvn)
+;; (when *is-a-mac*
+;;   (require-package 'osx-location))
+;; (require-package 'regex-tool)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
@@ -139,15 +139,15 @@
 ;;----------------------------------------------------------------------------
 ;; Locales (setting them earlier in this file doesn't work in X)
 ;;----------------------------------------------------------------------------
-(require 'init-locales)
+;; (require 'init-locales)
 
-(add-hook 'after-init-hook
-          (lambda ()
-            (message "init completed in %.2fms"
-                     (sanityinc/time-subtract-millis after-init-time before-init-time))))
+;; (add-hook 'after-init-hook
+;;           (lambda ()
+;;             (message "init completed in %.2fms"
+;;                      (sanityinc/time-subtract-millis after-init-time before-init-time))))
 
 
-(provide 'init)
+;; (provide 'init)
 
 ;; Local Variables:
 ;; coding: utf-8
